@@ -1,20 +1,15 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sistema de Empleados</title>
-	<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
-	<link rel="icon" type="image/x-icon" href="img/icon_pag.png">
-	<link href="/path/print.css" media="print" rel="stylesheet" />
 	<link rel="stylesheet" href="css/diseño1.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-	integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-	crossorigin="anonymous"></script>
-	<script type="text/javascript" src="bootstrap-5.2.0-beta1-dist/js/bootstrap.min,js"></script>
-	
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
 
 	<br>
 
@@ -27,39 +22,47 @@
 
 </head>
 
-<body>	
+<body>
 	<div class="divisor"></div>
 
-	<div id="contenedorp" class="container, col-12" ><!--inicio contenedor principal class="d-flex align-items-center"-->
+	<div id="contenedorp" class="container, col-12">
 		<div class="row">
 			<center>
-				<div id="contenedor2"class="col-8">
-					<div class="card border-info" >
-						<div class="card-body" >
+				<div id="contenedor2" class="col-8">
+					<div class="card border-info">
+						<div class="card-body">
 							<ul class="list-group list-group-light">
-								<li class="list-group-item">	
+								<li class="list-group-item">
 									<div class="container">
 										<div class="row">
 											<div class="col-12">
 												<center>
-													<table border="5"bgcolor="grey" width="600" class="clase_table">
+													<table border="5" bgcolor="grey" width="600" class="clase_table">
 														<tr>
 															<td align="center">
 																<div class="container">
 																	<br>
-																	<div for="txt_nombre"><b>Nombre:</b>
-																		<input type="text" name="txt_nombre" id="txt_nombre" >
+																	<div class="mb-3">
+																		<label for="txt_nombre"
+																			class="form-label">Nombre</label>
+																		<input class="form-control" type="text"
+																			id="txt_nombre" name="txt_nombre"
+																			placeholder="Ingrese su nombre">
 																	</div>
 
 																	<br>
 
-																	<div for="txt_apellido"><b>Apellido:</b>
-																		<input type="text" name="txt_apellido" id="txt_apellido" >
+																	<div class="mb-3">
+																		<label for="txt_apellido"
+																			class="form-label">Apellido</label>
+																		<input class="form-control" type="text"
+																			name="txt_apellido" id="txt_apellido"
+																			placeholder="Ingrese su apellido">
 																	</div>
 
 																	<br>
-																	
-																	<div class="container">	
+
+																	<div class="container">
 																		<div class="row">
 																			<div class="col-3">
 																				<div for="txt_sexo"><b>Sexo:</b></div>
@@ -67,36 +70,58 @@
 																			<div class="col-3">
 																				<!-- Default radio -->
 																				<div class="form-check">
-																					<label class="form-check-label" for="flexRadioDefault1"> M </label>
-																					<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+																					<label class="form-check-label"
+																						for="flexRadioDefault1"> M
+																					</label>
+																					<input class="form-check-input"
+																						type="radio"
+																						name="flexRadioDefault"
+																						id="flexRadioDefault1" />
 																				</div>
 																				<!-- Default checked radio -->
 																				<div class="form-check">
-																					<label class="form-check-label" for="flexRadioDefault2"> F </label>
-																					<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
+																					<label class="form-check-label"
+																						for="flexRadioDefault2"> F
+																					</label>
+																					<input class="form-check-input"
+																						type="radio"
+																						name="flexRadioDefault"
+																						id="flexRadioDefault2"
+																						checked />
 																				</div>
 
-                                                                                <div class="form-check">
-																					<label class="form-check-label" for="flexRadioDefault3">  B </label>
-																					<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3"/>
+																				<div class="form-check">
+																					<label class="form-check-label"
+																						for="flexRadioDefault3"> B
+																					</label>
+																					<input class="form-check-input"
+																						type="radio"
+																						name="flexRadioDefault"
+																						id="flexRadioDefault3" />
 																				</div>
 
-                                                                                
+
 																			</div>
 																		</div>
 																	</div>
-																	
-																	
+
+
 																	<br>
 
 																	<div for="fech_nac"><b>Fecha de Nacimiento:</b>
-																		<input style="background-color:transparent" type="date" id="fech_nac" name="fech_nac" value="2023-12-12" min="1900-01-01" max="3000-12-31">
+																		<input style="background-color:transparent"
+																			type="date" id="fech_nac" name="fech_nac"
+																			class="form-control" value="2023-12-12"
+																			min="1900-01-01" max="3000-12-31">
 																	</div>
 
 																	<br>
 
 																	<div for="fech_ing"><b>Fecha de Ingreso:</b>
-																		<input style="background-color:transparent" type="date" id="fech_ing" name="fech_ing" value="2022-01-01" min="1900-01-01" max="3000-12-31">
+																		<input style="background-color:transparent"
+																			type="date" id="fech_ing" name="fech_ing"
+																			class="form-control" value="2022-01-01"
+																			min="1900-01-01" max="3000-12-31">
 																	</div>
 
 																	<br>
@@ -104,12 +129,13 @@
 															</td>
 
 															<td>
-																<img heigth="200" width="200"src="img/perfil.gif" alt="No hay imagen">
-															</td>	
-														</tr>	
-														</table>
+																<img heigth="200" width="200" src="img/perfil.gif"
+																	alt="No hay imagen">
+															</td>
+														</tr>
+													</table>
 												</center>
-											</div>	
+											</div>
 										</div>
 									</div>
 								</li>
@@ -119,42 +145,30 @@
 										<div class="row">
 											<div class="col-12">
 												<center>
-													<div border="5" width="600" class="container" id="contenedor3">
+													<div>
 														<tr>
+
+
+															<button data-mdb-ripple-duration="10s"
+																class="btn btn-dark mb-3" onclick="calcularEdad()"
+																type="button">Calcular Edad
+															</button> 
 															
-																<div class="container">
-																	<div>
-																		<div>
-																			<button data-mdb-ripple-duration="10s" onclick="calcularEdad()" type="button" >Calcular Edad</button>
-																		</div>
-																					</div>
-																</div>
-															
-														
-														
-															
-																<div class="container">
-																	<div>
-																		<div>
-																			<button data-mdb-ripple-duration="10s" onclick="calcularAntiguedad()" type="button">Calcular Antiguedad</button>
-																		</div>
-																		
-																	</div>
-																</div>
-															
-														
-													
-														
-																<div class="container">
-																	<div >
-																		<div>
-																			<button data-mdb-ripple-duration="10s" onclick="calcularPrestaciones()" type="button" >Calcular Prestaciones</button>
-																		</div>
-																		
-																	</div>
-																</div>
-															
-														
+															<p type="text" name="cal_edad" id="cal_edad" >-</p>
+
+															<button data-mdb-ripple-duration="10s"
+																class="btn btn-dark mb-3" onclick="calcularAntiguedad()"
+																type="button">Calcular Antiguedad
+															</button>
+                                                            <p type="text" name="cale_antig" id="cale_antig">-</p>
+															<button data-mdb-ripple-duration="10s"
+																class="btn btn-dark mb-3"
+																onclick="calcularPrestaciones()" type="button">Calcular
+																Prestaciones
+															</button>
+															<p type="text" name="cale_pres" id="cale_pres">-</p>
+
+
 													</div>
 												</center>
 											</div>
@@ -169,49 +183,51 @@
 									</div>
 								</li>
 							</ul>
-                            <li class="list-group-item">
-									<div class="container">
-										<div class="row">
-											<div class="col-12">
-												<center>
-													<table border="5"bgcolor="grey" width="600" class="clase_table">
-														<tr>
-															<td>
-																<center>
-																	<div for="txt_sala">
-																	<b>	<p id="txt_sala">Salario: $</b> <input type="text">  </p>
-																		
-																		<button data-mdb-ripple-duration="10s" onclick="modificarSalario()" type="button" >Modificar</button>
-																	</div>
-																</center>
-															</td>
-														</tr>	
-													</table>
-												</center>
-											</div>
+							<li class="list-group-item">
+								<div class="container">
+									<div class="row">
+										<div class="col-12">
+											<center>
+												<table border="5" bgcolor="grey" width="600" class="clase_table">
+													<tr>
+														<td>
+															<center>
+																<div for="txt_sala">
+																	<b>
+																		<p id="txt_sala">Salario: $1'000.000</p>
+																	</b> 
+
+																	<button data-mdb-ripple-duration="10s" onclick="modificarSalario()" class="btn btn-dark" type="button">Modificar</button>
+																</div>
+															</center>
+														</td>
+													</tr>
+												</table>
+											</center>
 										</div>
 									</div>
-									<div>
-										<h5>puntos de extencion</h5>
-									</div>
-									<center>
-										<input type="button" value="opcion1 "> <input type="button" value="opcion2">
-									</center>
-									
-										
-									
-								</li>
+								</div>
+								<div>
+									<h5>puntos de extencion</h5>
+								</div>
+								<center>
+									<input type="button" class="btn btn-dark" onclick="pagosTotales()" value="Total dinero recibido a la fecha "> <input type="button" class="btn btn-dark" onclick="window.print()" value="Imprimir">
+								</center>
+
+
+
+							</li>
 						</div>
-						
+
 					</div>
-                    
+
 				</div>
 			</center>
-            
+
 		</div>
 
-	</div>	<!--fin contenedor principal-->
-<!--hola-->
+	</div>
 	<script type="text/javascript" src="js/functions.js"></script>
 </body>
+
 </html>
